@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "搭配师档案",
+  "enablePullDownRefresh": false,
+      "navigationBarTextStyle": "black",
+      
+    "navigationBarBackgroundColor": "#ffffff"
+    
+}

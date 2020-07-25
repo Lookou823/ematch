@@ -1,0 +1,376 @@
+  @import '../common/common.wxss';
+
+/* pages/wordsinput/wordsinput.wxss */
+page{
+
+background: #1b3569;
+
+
+}
+
+.headp{
+
+  width: 100%;
+  height: 260rpx;
+
+display: flex;
+flex-direction: column;
+}
+
+.contenta{
+  margin-top: 20rpx;
+width: 100%;
+display: flex;
+flex-direction: column;
+height: auto;
+
+background: #dbe3f3;
+position: relative;
+align-items: center;
+}
+
+.photo{
+
+width: 80%;
+height: 540rpx;
+background: white;
+margin-top: -80rpx;
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.sample{
+margin-top: 20rpx;
+width: 60%;
+height: 300rpx;
+
+
+
+}
+
+.tip
+{
+  margin-top: 18rpx;
+  font-size: 12px;
+
+}
+
+
+.slogan{
+margin-top: 70rpx;
+margin-left: 340rpx;
+font-size: 40px;
+font-weight: 900;
+color: white;
+
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+margin-top: 20rpx;
+
+width: 100%;
+
+
+}
+.box{
+  display: flex;
+flex-direction: column;
+align-items: center;
+width: 120rpx;
+height: 120rpx;
+background: white;
+box-shadow:3rpx 3rpx 3rpx 3rpx #dbe3f3;
+
+}
+
+
+.box1{
+  display: flex;
+flex-direction: column;
+align-items: center;
+width: 120rpx;
+height: 120rpx;
+background: white;
+box-shadow:3rpx 3rpx 3rpx 3rpx #dbe3f3;
+}
+
+
+.center{
+  text-align: center;
+}
+.but{
+  /* margin-left: 380rpx; */
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 120rpx;
+height: 120rpx;
+background: #ffffff;
+box-shadow:3rpx 3rpx 3rpx 3rpx #dbe3f3;
+
+}
+
+.bu2
+{
+  margin-top: 40rpx;
+width: 50rpx;
+height: 50rpx;
+}
+
+
+.result{
+  margin-top: 460rpx;
+width: 90%;
+height: 120rpx;
+background: black;
+text-align: center;
+display: flex;
+flex-direction: column;
+}
+
+.wenben{
+  font-size: 20px;
+  margin-top: 30rpx;
+  color: white;
+}
+
+/* 专栏 */
+.model{
+  margin-top: 60rpx;
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: flex-start;
+
+}
+
+
+.slogan222{
+
+  margin-left: 80rpx;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.choice{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+.rec{
+display: flex;
+  flex-direction: column;
+width: 28%;
+height: 80rpx;
+background: #ffffff;
+text-align: center;
+border-radius: 10rpx;
+}
+
+.slogan333
+{
+  margin-top: 20rpx;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .page{
+  margin-top:60rpx;
+  display: flex;
+  flex-direction: column;
+}
+.page_hd{
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.page_title{
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+
+.explain{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+
+} */
+  /*  */
+/* .search{
+  margin-top:880rpx;
+    padding: 20rpx;
+}
+.search-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rpx;
+    color: #aaa;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20rpx;
+}
+.search-text icon{
+    margin-right: 10rpx;
+}
+swiper {
+    height: 600.5rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.select-title,.newest-title{
+    width: 100%;
+    padding:30rpx 0;
+    height: 40rpx;
+    color: #13227a;
+    text-align: center;
+}
+.select-top-small{
+    width: 100%;
+    height: 875rpx;
+    float: left;
+
+}
+.select-bottom,.select-top{
+    width: 100%;
+    height: 875rpx;
+}
+.select-top-small image,.select-bottom image,.select-top-small navigator,.select-bottom navigator{
+    display: block;
+    width: 100%;
+    height: 100%;
+        position: relative;
+
+}
+
+
+.button1{
+color: white;
+width: 150rpx;
+margin-top: 700rpx;
+margin-left: 40rpx;
+background-color: rgb(228, 104, 21);
+/* background-color: rgb(54, 80, 136); */
+
+/* position: absolute;
+
+} */
+/* .button2{
+color: white;
+width: 150rpx;
+margin-top: 700rpx;
+margin-left: 40rpx;
+background-color: rgb(228, 104, 21); */
+/* background-color: rgb(54, 80, 136); */
+
+/* position: absolute;
+
+}
+
+.button3{
+color: white;
+width: 150rpx;
+margin-top: 700rpx;
+margin-left: 40rpx;
+background-color: rgb(228, 104, 21); */
+/* background-color: rgb(54, 80, 136); */
+/* 
+position: absolute;
+
+}
+
+.newest{
+  margin-top: 900rpx; 
+}
+
+.newest-box{
+
+
+    padding:0 40rpx;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    width: 325rpx;
+    height: 325rpx;
+    margin:0 20rpx 20rpx 0;
+    border-radius: 10px;
+    text-align: center;
+    background: #f5f6f5;
+}
+.newest-box .newest-list:nth-child(2n){
+    margin-right: 0;
+}
+.newest-box .newest-list image{
+    width: 225rpx;
+    height: 225rpx;
+    margin: 20rpx 0 0rpx;
+    border-radius: 20rpx;
+}  */
+
+/* 
+.newest-box .newest-list .text-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+} */
+
+/* 
+
+.newest-box .newest-list .newest-text{
+    margin:0 20rpx 20rpx 0;
+
+    font-size: 32rpx;
+} */
+
+
+/* 瀑布流的样式 */
+
+/* 单个图片容器的样式 */
+/* .img_item {
+  width: 48%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.img_item image{
+  margin-top: 10rpx;
+
+  border-radius: 36rpx;
+
+} */

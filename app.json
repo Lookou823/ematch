@@ -1,0 +1,81 @@
+{
+  "pages": [
+            "page/component/index",
+            
+            "page/component/clothdesign/clothdesign",
+            
+            
+    
+                "page/component/clothdodetail/clothdodetail",
+                
+    "page/component/sortsearch/sortsearch",
+    
+        "page/component/designdetail/designdetail",
+    "page/component/user/user",
+    "page/component/details/details",
+    "page/component/category/category",
+    "page/component/cart/cart",
+    "page/component/address/address",
+    "page/component/orders/orders",
+    "page/component/list/list",
+    "page/component/search/search",
+    "page/component/news3/news3",
+    "page/component/news/news",
+    "page/component/news2/news2",
+    "page/component/list2/list2",
+    "page/component/search2/search2",
+    "page/component/headpage/headpage"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#1F3858",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#1F3858",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "iconPath": "image/看点_观看.png",
+        "selectedIconPath": "image/看点_观看 (1).png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/component/category/category",
+        "iconPath": "image/商城.png",
+        "selectedIconPath": "image/商城 (1).png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "page/component/sortsearch/sortsearch",
+        "iconPath": "image/搭配 (3).png",
+        "selectedIconPath": "image/搭配 (2).png",
+        "text": "发现搭配"
+      },
+      {
+        "pagePath": "page/component/clothdesign/clothdesign",
+        "iconPath": "image/搭配师 (1).png",
+        "selectedIconPath": "image/搭配师 (2).png",
+        "text": "搭配师档案"
+      },
+      {
+        "pagePath": "page/component/user/user",
+        "iconPath": "image/个人中心 选中.png",
+        "selectedIconPath": "image/个人中心 选中 (1).png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,22 @@
+<view class="main">
+    <view class="banner">
+        <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg" mode="aspectFill"></image>
+    </view>
+
+    <!-- <view class="list-box"> -->
+                <view class="newest-box">
+                            <view class="caption"><text>{{caption}}</text></view>
+                            <view class="newest-list" wx:for="{{itemlist}}" wx:for-item="item" bindtap="gotoDetail" data-id="{{item.id}}" >
+
+                                
+                                  <image src="{{item.thumb}}" mode="aspectFill"></image>
+                                  <view class="text-row">
+                                  <view class="newest-text"><text>{{item.name}}</text></view>
+                                  <view class="newest-text"><text>￥{{item.price}}</text></view>
+                                  </view>
+
+                            </view>
+                            
+                      </view>
+       
+</view>

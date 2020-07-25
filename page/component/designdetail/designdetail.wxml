@@ -1,0 +1,88 @@
+<!--page/component/designdetail/designdetail.wxml-->
+<view class="contain">
+ <!-- 展示轮播图 -->
+
+<swiper class="swiper-block" previous-margin="90rpx" next-margin="90rpx" current="0" bindchange="swiperChange">
+
+<block wx:for="{{brandList[0]['detail']}}" wx:index="{{index}}">
+
+<swiper-item class="swiper-item">
+
+<image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+
+</swiper-item>
+
+</block>
+
+</swiper>
+<!--  -->
+
+<!-- 第二部分细节 -->
+
+<view class="detail">
+
+<text class="slogan">搭配单品</text>
+
+<!--  -->
+
+<!-- 使用模板 -->
+   <import src="/page/component/template/template.wxml" />
+  
+
+
+<!-- 展示轮播图 -->
+
+<swiper class="swiper-block2" previous-margin="70rpx" next-margin="320rpx" current="0">
+
+<block wx:for="{{infodata}}" wx:index="{{index}}"  wx:for-item = 'item' >
+
+<swiper-item class="swiper-item2">
+
+　　　　<template is='goodsitem' data="{{item}}"/>
+
+</swiper-item>
+
+</block>
+
+</swiper>
+
+</view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+<view class="detail">
+<text class="slogan">猜你喜欢</text>
+
+<!-- 瀑布流 -->
+<view class="bg">
+
+<view class="columnView" >
+
+<image class="itemCover" wx:for="{{co1}}" wx:key="index" src="{{item.image}}" mode="widthFix"data-id="{{item.name}}" bindtap="gotodetail1"></image>
+</view>
+
+
+<view class="columnView" >
+<image class="itemCover" wx:for="{{co2}}" wx:key="index" src="{{item.image}}" mode="widthFix" data-id="{{item.name}}" bindtap="gotodetail2"></image>
+
+</view>
+
+
+</view>
+
+
+
+
+
+
+</view>
+

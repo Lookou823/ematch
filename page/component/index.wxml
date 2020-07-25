@@ -1,0 +1,263 @@
+<view class="main">
+
+<view class="headp">
+
+
+<text class="slogan">u Figure</text>
+
+
+</view>
+
+<view class="contenta">
+        <view class="photo">
+                <image class="sample" mode="aspectFill"
+                src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E7%B4%A0%E6%9D%904.png"></image>
+                          <view class="line">
+                              <view class="box">
+                              <input class="box" placeholder-class="center"placeholder="身高"></input>
+                              </view>
+
+                                        <view class="box1">
+                                                <input class="box1"placeholder-class="center"placeholder="体重"></input>
+                                        </view>
+                                        <view class="but">
+                                                <image class="bu2" src="../../image/添加.png"></image>
+
+                                        </view>
+
+                            </view>
+                        <text class="tip">请上传和样例类似的身材图片</text>
+
+        </view>
+
+        <view class="result">
+          <text class="wenben">Result</text>
+        </view>
+
+
+
+              <view class="model">
+              <text class="slogan222">分类专栏</text>
+              
+                      <view class="choice">
+                                <view class="rec">
+                                      <text class="slogan333">流行趋势</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">搭配干货</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">经典推荐</text>
+                                </view>
+                      </view>
+              
+              
+              </view>
+
+
+ <view class="model">
+              <text class="slogan222">品类选择</text>
+              
+                      <view class="choice">
+                                <view class="rec">
+                                      <text class="slogan333">衬衫</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">短袖</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">裙子</text>
+                                </view>
+                      </view>
+              
+              
+              </view>
+
+ <view class="model">
+              <text class="slogan222">场景选择</text>
+              
+                      <view class="choice">
+                                <view class="rec">
+                                      <text class="slogan333">约会</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">聚会</text>
+                                </view>
+                                <view class="rec">
+                                      <text class="slogan333">旅游</text>
+                                </view>
+                      </view>
+              
+              
+              </view>
+
+
+
+
+
+</view>
+
+
+
+  
+
+
+
+
+
+
+</view>
+
+
+
+  <!-- 增加的视频 -->
+<!-- <text>不务正业的小程序</text> -->
+
+ <!-- 视频界面 -->
+            <!-- <view class="page">
+              <view class="page_hd">
+              <text class="page_title">3月5号群里直播录屏</text>
+              
+              </view>
+
+              <view class="page_bd">
+                <view class="section section_gap">
+                  <view class="body-view" style="text-align:center;">
+                    <video id="myVideo" src="https://vedio111-1300314777.cos.ap-chengdu.myqcloud.com/20200305-191701580.mp4" binderror="videoErrorCallback" controls>
+                    
+                    </video>
+                  
+                  
+                  </view>
+                
+                
+                </view>
+              
+              </view>
+            </view>   
+    <view class="divLine"></view>
+    <text class="explain">由于视频有点大，第一次点击可能会没有反应，小问题，稍等几秒就能流畅播放了,点击右下角进入全屏</text> -->
+
+
+<!--  -->
+
+
+  
+  <!-- 轮播图 -->
+    <!-- <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%" mode="aspectFit"/>
+            </swiper-item>
+        </block>
+    </swiper> -->
+
+
+<!-- 资讯 -->
+
+    <!-- <view class="selected"> -->
+        <!-- <view class="select-title"><text>精选主题</text></view> -->
+        <!-- <view class="select-top">
+            <view class="select-top-small">
+                <navigator url="news/news">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title1.png" mode="aspectFill"></image>
+                </navigator>
+
+            </view>
+
+            <button class="button1">View</button>
+
+
+
+            <view class="select-top-small">
+                <navigator url="news2/news2">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title2.png"mode="aspectFill"></image>
+                </navigator>
+
+            </view>
+
+        </view>
+                                        <button class="button2">View</button> -->
+
+
+
+
+<!-- 
+        <view class="select-bottom">
+            <navigator url="news3/news3">
+                <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title3.png"mode="aspectFill"></image>
+            </navigator>
+                               
+
+        </view>
+ <button class="button3">View</button>
+
+    </view> -->
+
+
+    
+    <!-- <view class="newest"> -->
+        <!-- <view class="newest-title"><text>最近新品</text></view> -->
+        <!-- <view class="newest-box">
+          
+
+        </view> -->
+
+        <!-- for loop shows the items -->
+
+             <!-- for loop shows the items -->
+<!-- 
+          <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{itemlist}}" wx:for-item="item" bindtap="gotoDetail" data-id="{{index}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      <view class="newest-text"><text>￥{{item.price}}</text></view>
+                      </view>
+
+                </view>
+                
+          </view> -->
+
+
+
+
+  <!-- 搜索框 -->
+
+   
+
+<!-- 
+        <view class="search">
+        <navigator url="search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                试着搜搜颜色
+            </view>
+        </navigator>
+    </view> -->
+    <!-- 搜索框 -->
+<!-- 瀑布流 -->
+
+<!-- 在页面上放一个隐藏区域，并用image组件去加载一个或多个图片资源 -->
+<!-- <view style="display:none">
+  <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
+</view>
+
+
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+  <view style="width:100%">
+    <view class="img_item">
+      <view wx:for="{{col1}}" wx:key="id">
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+    </view>
+    <view class="img_item">
+      <view wx:for="{{col2}}" wx:key="id">
+        <image src="{{item.pic}}" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view> -->

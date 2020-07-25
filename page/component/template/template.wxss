@@ -1,0 +1,163 @@
+
+
+
+.info-container{
+  margin-top: 40rpx;
+    margin-left: 70rpx;
+    border-radius: 20rpx;
+
+width: 80%;
+height: 380rpx;
+display: flex;
+flex-direction: row;
+background-color: rgb(227, 228, 245);
+}
+
+
+
+
+.author{
+  margin-left: 20rpx;
+  width:240rpx;
+  height: 340rpx;
+  border-radius: 20rpx;
+}
+
+.avatar{
+  margin-top: 20rpx;
+  width: 240rpx;
+  height: 340rpx;
+  border-radius: 20rpx;
+  border: 4rpx double  white;
+}
+.text-content{
+    margin-top: 20rpx;
+  margin-left: 50rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* text-decoration:underline; */
+}
+
+
+.star{
+  margin-top: 15rpx;
+display: flex;
+flex-direction: row;
+width: 100%;
+margin-right: 70rpx;
+height: 48rpx;
+/* background: black; */
+justify-content: left;
+margin-bottom: 40rpx;
+}
+
+.temp{
+width: 22px;
+height: 22px;
+}
+.name{
+  margin-top: -60rpx;
+  margin-left: 20rpx;
+font-size: 20px;
+font-weight:1000;
+
+}
+
+.xiugai{
+  margin-bottom: 110rpx;
+
+
+}
+
+.style{
+
+margin-top: 60rpx;
+margin-right: 10rpx;
+color: #DFDFDF;
+
+}
+
+.fans{
+
+  /* font-weight:700; */
+
+
+}
+
+
+.intro{
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+display:-webkit-box;
+
+-webkit-line-clamp:1;
+
+-webkit-box-orient:vertical;
+
+}
+
+
+
+/* 单品信息的属性 */
+
+.goodscontain{
+display: flex;
+flex-direction: column;
+width: 260rpx;
+height: 100%;
+background: #BFBD59;
+
+
+}
+.word{
+  width: 260rpx;
+  height: 120rpx;
+  display: flex;
+flex-direction: column;
+margin-top: -30rpx;
+}
+
+
+
+.singlec{
+
+width: 100%;
+height: 400rpx;
+background: black;
+
+
+}
+
+
+.name1{
+  margin-top: 38rpx;
+font-size: 15px;
+font-weight:1000;
+color: white;
+
+}
+
+.intro{
+
+  color: white;
+}
+
+
+ /* */
+ /*  */
+ /*             第三步                 */
+ /*  */
+/*  */
+
+
+.avatar2{
+  margin-top: 20rpx;
+  width: 115rpx;
+  height: 115rpx;
+  border-radius: 115rpx;
+  border: 12rpx solid  #79AFCA;
+}

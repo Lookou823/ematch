@@ -1,0 +1,47 @@
+<!--page/component/sortsearch/sortsearch.wxml-->
+<!-- 瀑布流 -->
+<!-- 搜索框 -->
+<view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box" >
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="试着搜搜颜色" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" bindconfirm="inputSearch"/>
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput"> X </view>
+        </view>
+    </view>
+  <!-- 搜索框 -->
+
+
+<!-- <scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages" lower-threshold="50"> -->
+<scroll-view scroll-y="true" style="height:{{scrollH}}px"  >
+
+<view class="bg">
+<!-- 单独的两列 -->
+<view class="columnView" >
+
+<image class="itemCover"wx:for="{{co1}}" wx:key="index" src="{{item.image}}" data-id="{{item.name}}" mode="widthFix" bindtap="gotodetail1"></image>
+</view>
+
+<!-- 单独的两列 -->
+<view class="columnView" >
+<image class="itemCover" wx:for="{{co2}}" wx:key="index" src="{{item.image}}" data-id="{{item.name}}" mode="widthFix" bindtap="gotodetail2"></image>
+
+</view>
+
+
+</view>
+
+
+
+</scroll-view>
+

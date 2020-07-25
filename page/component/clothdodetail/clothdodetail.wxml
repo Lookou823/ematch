@@ -1,0 +1,75 @@
+<!--pages/gpDetail/gpDetail.wxml-->
+<view class="main">
+
+              <image class="aaaa"   src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E6%90%AD%E9%85%8D%E5%B8%88%E8%83%8C%E6%99%AF.jpg" mode="aspectFill"></image>
+
+          <view class="back">
+
+                      <image class="avatar" src="{{design.avatar}}"></image>
+                      <view class="intro">
+
+                          <text class="name">{{design.name}}\n</text>
+                          <text class="style">擅长风格：{{design.style}}\n</text>
+                      
+
+                      </view>
+
+          
+          </view>
+
+<!--  -->
+
+        <view class='topTabSwiper'>
+            <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>个人简介</view>
+            <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>搭配案例</view>
+            <!-- <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>关注</view> -->
+        </view>
+        <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+
+
+          <swiper-item catchtouchmove="stopTouchMove">
+            
+            
+            
+        
+                <view class='swiper_con'>
+                            <view class="intro2">
+
+                <text class="t-intro">{{design.text}}</text>
+                              </view>
+
+                </view>
+          
+          
+          </swiper-item> 
+
+
+          <swiper-item >
+
+            <view class='swiper_con'>
+            <view class="intro2">
+                <view class="swiper3333">
+                
+                
+                </view>
+                
+
+            </view>
+
+
+<!-- for 循环结束 -->
+              </view>
+       
+          </swiper-item>
+          <!-- <swiper-item><view class='swiper_con'>welcome come to 关注</view></swiper-item>   -->
+</swiper>
+<!--  -->
+
+    
+
+
+
+
+
+
+</view>

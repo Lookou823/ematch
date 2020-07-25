@@ -1,0 +1,47 @@
+<!--page/component/news/news.wxml-->
+
+<view class="main">
+
+      <view class="topimg">
+        <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title1.png" mode="aspectFill"></image>
+
+      </view>
+
+
+  <!-- <view class="circle">
+      <view class='distance' wx:if='{{distanceFlag}}'>
+          <view class='dist_s'></view>
+      </view>
+
+  </view> -->
+
+<!-- 标题 -->
+
+<text class="caption"></text>
+
+      <!-- 搭配师 -->
+
+        <view class="people">
+      
+                  <image class="avatar" src="{{peo.avatar}}"></image>
+                      <view class="word">
+                        <text class="name">{{peo.name}}</text>
+                        <text class="style">{{peo.style}}</text>
+                                
+
+                      </view>
+                    <text class="time">{{peo.time}}</text>
+
+         </view>
+
+
+
+          <text class="content">{{peo.content}}</text>
+      
+          <text class="intro">{{peo.intro}}</text>
+ 
+
+        <image class="deco" src="/image/书签.png" mode="aspectFill"></image>
+
+
+</view>

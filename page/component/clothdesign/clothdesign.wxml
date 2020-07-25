@@ -1,0 +1,72 @@
+<!--page/component/clothdesign/clothdesign.wxml-->
+  <!-- 搜索框 -->
+  
+  
+      <!-- <view class="search">
+        <navigator url="/page/component/search2/search2">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                搜 索
+            </view>
+        </navigator>
+    </view> -->
+        <!-- 使用模板 -->
+
+    <import src="/page/component/template/template.wxml" />
+
+    <!-- 上方圆圈一堆，用swiper来搞，记录current，然后用if来渲染界面 -->
+<view class="head">
+
+<block wx:for = "{{infodata}}" wx:for-item = 'item' >
+<view class="headitem">
+　　　　        <template is='avatorlist'  data="{{item}}"/>
+
+
+</view>
+
+</block>
+
+
+</view>
+
+<view class="person">
+
+<image class="body" src="{{infodata[track].avatar}}" mode="aspectFill"></image>
+
+
+
+</view>
+  <view class="tag" bindtap="gotoDetail" data-id="{{track+1}}">
+      <image class="avatar11" src="{{infodata[track].avatar}} "mode="aspectFill"></image>
+      <text class="name">{{infodata[track].name}}</text>
+      <text class="style">{{infodata[track].style}}</text>
+  </view>
+
+
+<!-- 聊天室 -->
+<view class="chatroom">
+<text class="slogan1">大个子交流区</text>
+<image class="contentimg" src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title1.png" mode="aspectFill"></image>
+
+</view>
+<view class="chatroom">
+
+<text class="slogan1">小身材交流区</text>
+<image class="contentimg" src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E6%90%AD%E9%85%8D%E6%96%B9%E6%A1%88/title2.png"mode="aspectFill"mode="aspectFill"></image>
+
+</view>
+
+
+
+    <!-- <swiper class="swiper-block2" previous-margin="30rpx" next-margin="30rpx" current="0">
+
+    <block wx:for = "{{infodata}}" wx:for-item = 'item' >
+        <swiper-item class="swiper-item2">
+
+　　　　        <template is='infoitem' data="{{item}}"/>
+        </swiper-item>
+
+      </block>
+
+      </swiper>
+ -->

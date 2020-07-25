@@ -1,0 +1,143 @@
+/* page/component/designdetail/designdetail.wxss */
+@import '/page/component/template/template.wxss';
+page{
+
+height:100%;
+
+}
+.contain{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+background: #79AFCA;
+
+
+}
+
+/* 测试轮播图的样式代码 */
+.swiper-block{
+height: 740rpx;
+
+width: 100%;
+}
+
+.swiper-item{
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-center;
+
+overflow:unset;
+
+}
+
+.slide-image{
+
+height:620rpx;
+
+width: 480rpx;
+
+border-radius: 9rpx;
+
+box-shadow: 0px 0px 30rpx rgba(0, 0,0,.2);
+
+margin: 0rpx 45rpx;
+
+z-index: 1;
+
+}
+
+.active{
+
+transform: scale(1.14);
+
+transition:all .2s ease-in 0s;
+
+z-index: 20;
+
+}.swiper-block{
+
+height: 660rpx;
+
+width: 100%;
+
+}
+
+
+
+/* 第二部分 */
+.detail{
+
+display: flex;
+flex-direction: column;
+margin-top: 80rpx;
+width: 100%;
+height:auto;
+background: #1F3858;
+justify-content: flex-start;
+
+
+}
+
+
+
+/* 测试轮播图的样式代码2 */
+.swiper-block2{
+margin-top: 0rpx;
+height: 380rpx;
+
+width: 100%;
+
+}
+
+.swiper-item2{
+display: flex;
+width: 300rpx;
+flex-direction: column;
+
+justify-content: center;
+
+align-items: flex-center;
+
+overflow:unset;
+
+}
+
+
+.slogan{
+margin: 10rpx;
+color: white;
+font-weight: 900;
+
+
+}
+
+
+
+
+/* 瀑布流 */
+.bg {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.columnView {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columnView .itemCover {
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  border-radius: 38rpx;
+}

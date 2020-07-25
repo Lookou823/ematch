@@ -1,0 +1,257 @@
+<view class="main">
+    <view class="categroy-left">
+        <view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}"
+            bindtap="switchTab"
+            class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
+    </view>
+
+    <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
+         <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+            <view id="{{item.id}}" class="cate-box">
+                <view class="cate-banner">
+                    <image src="{{item.banner}}"></image>
+                </view>
+                <view class="cate-title">
+                    <text>{{item.cate}}</text>
+                </view>
+                <view class="product">
+                    <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+                        <navigator url="../list/list">
+                            <image src="{{val.thumb}}"></image>
+                            <view class="classname"><text>{{val.name}}</text></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </block> 
+        <block>
+            <view id="manup" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg"
+ mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+        <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{manups}}" wx:for-item="item" bindtap="gotoMlist" data-id="{{item.name}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+
+
+
+
+        </view>
+
+
+
+
+     
+
+
+
+        </block>
+
+
+        <block>
+            <view id="mandown" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg"mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+
+
+
+
+<view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{mandowns}}" wx:for-item="item" bindtap="gotoMlist" data-id="{{item.name}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+
+
+            </view>
+        </block>
+
+       <block>
+            <view id="womanup" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg"mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+
+
+                <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{womanups}}" wx:for-item="item" bindtap="gotoWlist" data-id="{{item.name}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+            </view>
+        </block>
+
+               <block>
+            <view id="womandown" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg"mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+
+
+                <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{womandowns}}" wx:for-item="item" bindtap="gotoWlist" data-id="{{item.name}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFill"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+            </view>
+        </block>
+
+               <block>
+            <view id="mans" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg"mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+
+
+                <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{mansh}}" wx:for-item="item" bindtap="gotoMlist" data-id="{{item.name}}" >
+
+                    
+                      <image src="{{item.url}}" mode="aspectFit"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+            </view>
+        </block>
+
+
+               <block>
+            <view id="womans" class="cate-box">
+                <view class="cate-banner">
+                    <image src="https://clothprogram-1300314777.cos.ap-chengdu.myqcloud.com/%E5%95%86%E5%9F%8E%E5%B0%81%E9%9D%A2/%E5%B0%81%E9%9D%A2.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="cate-title">
+                    <text>单品种类</text>
+                </view>
+                <!-- <view class="product">
+                    <view class="product-list">
+                        <navigator url="../list/list">
+                            <image src="/image/c2.png"></image>
+                            <view class="classname"><text>梨花带雨 3个</text></view>
+                        </navigator>
+                    </view>
+                </view> -->
+
+
+                <view class="newest-box">
+                
+                <view class="newest-list" wx:for="{{womansh}}" wx:for-item="item" bindtap="gotoWlist" data-id="{{item.name}}">
+
+                    
+                      <image src="{{item.url}}" mode="aspectFit"></image>
+                      <view class="text-row">
+                      <view class="newest-text"><text>{{item.name}}</text></view>
+                      </view>
+
+                </view>
+            
+              </view>
+
+            </view>
+        </block>
+
+
+    </scroll-view>
+
+</view>

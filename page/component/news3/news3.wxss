@@ -1,0 +1,128 @@
+/* page/component/news3/news3.wxss */
+
+/* page/component/news/news.wxss */
+
+.topimg
+{
+  width: 100%;
+}
+
+.topimg image{
+
+  width: 100%;
+}
+
+.main{
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.avatar{
+
+width: 44px;
+height: 44px;
+border-radius: 44rpx;
+
+
+}
+
+.people{
+  margin-left: 10rpx;
+margin-top: 20rpx;
+display: flex;
+flex-direction: row;
+
+}
+.word{
+  
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx ,20rpx, 20rpx,0;
+}
+
+.name{
+
+margin-left: 10rpx;
+
+font-weight: 800;
+}
+
+.style{
+  font-size: 30rpx;
+
+margin-left: 10rpx;
+color: gainsboro;
+}
+
+.time{
+  font-size: 26rpx;
+  margin-left: 110rpx;
+  color: gainsboro;
+
+}
+
+.content{
+
+
+  margin-left: 20rpx;
+  margin-top:20rpx;
+  display: flex;
+  font-size: 28rpx;
+}
+
+
+.intro{
+  margin-left: 20rpx;
+  margin-top:20rpx;
+  margin-right: 20rpx;
+  display: flex;
+  font-size: 28rpx;
+
+
+}
+
+.deco{
+  
+  margin-top:20rpx;
+  margin-left: 600rpx;
+  width: 62rpx;
+  height: 62rpx;
+}
+
+
+
+
+
+
+
+/* */
+
+/* .circle
+{
+  margin-top: 500rpx;
+}
+.distance{
+  margin-top: 300rpx;
+ width:798rpx;
+  height:826rpx;
+  border-radius: 12rpx;
+  position:absolute;
+  z-index:99999;
+  top:200rpx;
+
+  overflow: hidden;
+}
+.dist_s{
+  margin-top: 300rpx;
+  width:1030rpx;
+  height:1030rpx;
+  border-radius: 565rpx;
+  background-color: rgb(233, 233, 233);
+  margin-left:-224rpx;
+  margin-top:-303px;
+} */

@@ -1,0 +1,68 @@
+<view class="main">
+    <view class="header">
+        <image src="{{thumb}}" class="thumb"></image>
+        <text class="nickname">{{nickname}}</text>
+        <text class="about">关于我们</text>
+    </view>
+    <view class="address-box">
+        <view class="address-manage">
+            <navigator url="/page/component/address/address">地址管理</navigator>
+        </view>
+        <view wx:if="{{hasAddress}}" class="address-list">
+            <view>{{address.name}}</view>
+            <view>{{address.phone}}</view>
+            <view>{{address.detail}}</view>
+        </view>
+    </view>
+    <view class="orders-box">
+        <view class="orders">我的订单</view>
+        <view class="orders-list" wx:for="{{orders}}" wx:key="index">
+            <view class="orders-number">订单编号：{{item.number}}</view>
+            <view class="orders-detail">
+                <image src="{{item.thumb}}"></image>
+                <view class="">{{item.name}}</view>
+                <view class="">{{item.count}}</view>
+                <text class="orders-status">{{item.status}}</text>
+            </view>
+            <view class="orders-footer">
+                <text>实付：￥{{item.money}}</text>
+                <button size="mini" class="orders-btn" bindtap="payOrders">付款</button>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 数据库代码 -->
+<!-- <view class="contain">
+<text>添加衣服单品</text>
+<input  class="weui-input" placeholder="color" bindinput="getvalue1"></input>
+<input  class="weui-input" placeholder="image" bindinput="getvalue2"></input>
+<input  class="weui-input" placeholder="infocolor" bindinput="getvalue3"></input>
+<input  class="weui-input" placeholder="intro" bindinput="getvalue4"></input>
+<input  class="weui-input" placeholder="mat" bindinput="getvalue5"></input>
+<input  class="weui-input" placeholder="name" bindinput="getvalue6"></input>
+<input  class="weui-input" placeholder="price" bindinput="getvalue7"></input>
+<button bindtap="testCloud">确认添加</button>
+
+
+<text>添加衣服风格</text>
+
+<input  class="weui-input" placeholder="color" bindinput="getvalue11"></input>
+<input  class="weui-input" placeholder="image" bindinput="getvalue12"></input>
+<input  class="weui-input" placeholder="name" bindinput="getvalue13"></input>
+<input  class="weui-input" placeholder="style" bindinput="getvalue14"></input>
+<button bindtap="testCloud2">确认添加</button>
+
+<text>添加衣服饰品</text>
+<input  class="weui-input" placeholder="infocolor" bindinput="getvalue112"></input>
+<input  class="weui-input" placeholder="intro" bindinput="getvalue113"></input>
+<input  class="weui-input" placeholder="mat" bindinput="getvalue114"></input>
+<input  class="weui-input" placeholder="name" bindinput="getvalue115"></input>
+<input  class="weui-input" placeholder="price" bindinput="getvalue116"></input>
+
+<button bindtap="testCloud3">确认添加</button>
+
+
+ -->
+
+
+<!-- </view> -->
